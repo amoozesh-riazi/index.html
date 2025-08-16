@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>مسیر دانایی در ریاضیات متوسطه اول</title>
+  <meta name="author" content="YOUR_NAME_HERE" />
+  <style>
+    :root{
+      --blue:#1A237E;
+      --accent:#FF9800;
+      --muted:#F5F5F5;
+      --text:#1A237E;
+      --card-border:#e0e0e0;
+      --radius:10px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Tahoma",sans-serif;
+      background:var(--muted);
+      color:var(--text);
+      direction:rtl;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    header{
+      background:linear-gradient(90deg,var(--blue),#3949AB);
+      color:#fff;
+      padding:28px 18px;
+      text-align:center;
+    }
+    header h1{margin:0;font-size:1.6rem;letter-spacing:0.3px}
+    header p{margin:6px 0 0;font-size:0.95rem;opacity:0.95}
+
+    nav{
+      display:flex;
+      gap:10px;
+      justify-content:center;
+      padding:10px 12px;
+      background:var(--blue);
+      border-bottom:4px solid var(--accent);
+    }
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      padding:6px 10px;
+      border-radius:6px;
+      transition:background .18s ease;
+    }
+    nav a:hover{background:rgba(255,255,255,0.06)}
+
+    .container{max-width:1100px;margin:22px auto;padding:0 16px;}
+
+    .hero{
+      background:#fff;
+      padding:22px;
+      border-radius:var(--radius);
+      box-shadow:0 6px 18px rgba(26,35,126,0.06);
+      border-left:5px solid var(--accent);
+      text-align:center;
+    }
+    .hero h2{margin:0 0 8px;color:var(--blue)}
+    .hero p{margin:0;color:#333}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+      margin-top:18px;
+    }
+    .card{
+      background:#fff;
+      padding:14px;
+      border-radius:10px;
+      border:1px solid var(--card-border);
+      box-shadow:0 4px 10px rgba(0,0,0,0.04);
+    }
+    .card h3{margin:0 0 8px;color:var(--blue);font-size:1.05rem}
+    .card p{margin:0;color:#444;font-size:0.95rem}
+
+    .categories{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .cat{
+      background:linear-gradient(180deg,#fff,#fbfbff);
+      padding:10px 12px;border-radius:8px;border:1px solid var(--card-border);
+      min-width:120px;text-align:center;font-weight:600;color:var(--blue)
+    }
+
+    .about{
+      margin-top:18px;background:#fff;padding:16px;border-radius:10px;border:1px solid var(--card-border);
+    }
+
+    footer{
+      margin-top:26px;background:var(--blue);color:#fff;padding:14px 10px;text-align:center;border-top:4px solid var(--accent);
+    }
+    .footer-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center}
+    .author{
+      background:rgba(255,255,255,0.08);
+      padding:6px 10px;border-radius:999px;font-weight:600;
+    }
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:600px){
+      nav{flex-wrap:wrap}
+      .grid{grid-template-columns:1fr}
+      header h1{font-size:1.25rem}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>مسیر دانایی در ریاضیات متوسطه اول</h1>
+    <p>آموزش مفهومی، تمرین هدفمند، یادگیری ماندگار</p>
+  </header>
+
+  <nav>
+    <a href="#">خانه</a>
+    <a href="#">ریاضی هفتم</a>
+    <a href="#">ریاضی هشتم</a>
+    <a href="#">ریاضی نهم</a>
+    <a href="#">درباره من</a>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h2>خوش آمدید</h2>
+      <p>این‌جا محل تولید محتوای دقیق و قابل فهم برای دانش‌آموزان متوسطهٔ اول است.</p>
+    </section>
+
+    <section class="grid" aria-label="تازه‌ترین مطالب">
+      <article class="card">
+        <h3>آموزش عددهای صحیح (ریاضی هفتم)</h3>
+        <p>مفهوم عدد منفی، محور اعداد و جمع و تفریق صحیح‌ها — با مثال‌های تصویری.</p>
+      </article>
+
+      <article class="card">
+        <h3>معادله و متغیر (ریاضی هشتم)</h3>
+        <p>درک متغیر و حل معادلات ساده به زبان روشن و قابل فهم.</p>
+      </article>
+
+      <article class="card">
+        <h3>مفهوم دوران در هندسه (ریاضی نهم)</h3>
+        <p>درک گردش اشکال روی صفحه، با تصویرسازی و تمرین‌های مرحله‌ای.</p>
+      </article>
+    </section>
+
+    <section class="about" aria-label="درباره نویسنده">
+      <h3>درباره نویسنده</h3>
+      <p>این وبلاگ توسط <strong><!-- YOUR_NAME_HERE --></strong> ساخته شده تا آموزش ریاضی را ساده، قابل درک و جذاب کند. هدف ارائه محتواهای خلاصه، تمرین‌های کاربردی و منابع قابل دانلود است.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-row">
+      <div class="author">نویسنده: <!-- YOUR_NAME_HERE --></div>
+      <div style="font-size:0.9rem;opacity:0.95">© <span id="year"></span> همه حقوق برای صاحب اثر محفوظ است.</div>
+    </div>
+  </footer>
+
+  <script>
+    // قرار دادن سال جاری خودکار
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
